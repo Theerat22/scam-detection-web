@@ -1,0 +1,338 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-27T11:11:43.414368+00:00",
+  "title": "Design System: Scam Detection",
+  "extensions": {
+    "colorMeta": {
+      "pink": {
+        "role": "primary",
+        "displayName": "Pink",
+        "tonalRamp": [
+          "oklch(15% 0.1660 4.96)",
+          "oklch(27% 0.1660 4.96)",
+          "oklch(38% 0.1660 4.96)",
+          "oklch(50% 0.1660 4.96)",
+          "oklch(61% 0.1660 4.96)",
+          "oklch(73% 0.1660 4.96)",
+          "oklch(84% 0.1660 4.96)",
+          "oklch(95% 0.1660 4.96)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Accent",
+        "tonalRamp": [
+          "oklch(15% 0.1576 5.91)",
+          "oklch(27% 0.1576 5.91)",
+          "oklch(38% 0.1576 5.91)",
+          "oklch(50% 0.1576 5.91)",
+          "oklch(61% 0.1576 5.91)",
+          "oklch(73% 0.1576 5.91)",
+          "oklch(84% 0.1576 5.91)",
+          "oklch(95% 0.1576 5.91)"
+        ]
+      },
+      "pink-soft": {
+        "role": "primary",
+        "displayName": "Pink Soft",
+        "tonalRamp": [
+          "oklch(15% 0.0185 356.43)",
+          "oklch(27% 0.0185 356.43)",
+          "oklch(38% 0.0185 356.43)",
+          "oklch(50% 0.0185 356.43)",
+          "oklch(61% 0.0185 356.43)",
+          "oklch(73% 0.0185 356.43)",
+          "oklch(84% 0.0185 356.43)",
+          "oklch(95% 0.0185 356.43)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15% 0.0202 322.55)",
+          "oklch(27% 0.0202 322.55)",
+          "oklch(38% 0.0202 322.55)",
+          "oklch(50% 0.0202 322.55)",
+          "oklch(61% 0.0202 322.55)",
+          "oklch(73% 0.0202 322.55)",
+          "oklch(84% 0.0202 322.55)",
+          "oklch(95% 0.0202 322.55)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(15% 0.0204 340.38)",
+          "oklch(27% 0.0204 340.38)",
+          "oklch(38% 0.0204 340.38)",
+          "oklch(50% 0.0204 340.38)",
+          "oklch(61% 0.0204 340.38)",
+          "oklch(73% 0.0204 340.38)",
+          "oklch(84% 0.0204 340.38)",
+          "oklch(95% 0.0204 340.38)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface",
+        "tonalRamp": [
+          "oklch(15% 0.0041 337.35)",
+          "oklch(27% 0.0041 337.35)",
+          "oklch(38% 0.0041 337.35)",
+          "oklch(50% 0.0041 337.35)",
+          "oklch(61% 0.0041 337.35)",
+          "oklch(73% 0.0041 337.35)",
+          "oklch(84% 0.0041 337.35)",
+          "oklch(95% 0.0041 337.35)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "tonalRamp": [
+          "oklch(15% 0.0102 345.43)",
+          "oklch(27% 0.0102 345.43)",
+          "oklch(38% 0.0102 345.43)",
+          "oklch(50% 0.0102 345.43)",
+          "oklch(61% 0.0102 345.43)",
+          "oklch(73% 0.0102 345.43)",
+          "oklch(84% 0.0102 345.43)",
+          "oklch(95% 0.0102 345.43)"
+        ]
+      },
+      "danger": {
+        "role": "semantic",
+        "displayName": "Danger",
+        "tonalRamp": [
+          "oklch(15% 0.1693 14.79)",
+          "oklch(27% 0.1693 14.79)",
+          "oklch(38% 0.1693 14.79)",
+          "oklch(50% 0.1693 14.79)",
+          "oklch(61% 0.1693 14.79)",
+          "oklch(73% 0.1693 14.79)",
+          "oklch(84% 0.1693 14.79)",
+          "oklch(95% 0.1693 14.79)"
+        ]
+      },
+      "danger-soft": {
+        "role": "semantic",
+        "displayName": "Danger Soft",
+        "tonalRamp": [
+          "oklch(15% 0.0164 8.16)",
+          "oklch(27% 0.0164 8.16)",
+          "oklch(38% 0.0164 8.16)",
+          "oklch(50% 0.0164 8.16)",
+          "oklch(61% 0.0164 8.16)",
+          "oklch(73% 0.0164 8.16)",
+          "oklch(84% 0.0164 8.16)",
+          "oklch(95% 0.0164 8.16)"
+        ]
+      },
+      "green": {
+        "role": "semantic",
+        "displayName": "Green",
+        "tonalRamp": [
+          "oklch(15% 0.0840 167.20)",
+          "oklch(27% 0.0840 167.20)",
+          "oklch(38% 0.0840 167.20)",
+          "oklch(50% 0.0840 167.20)",
+          "oklch(61% 0.0840 167.20)",
+          "oklch(73% 0.0840 167.20)",
+          "oklch(84% 0.0840 167.20)",
+          "oklch(95% 0.0840 167.20)"
+        ]
+      },
+      "green-soft": {
+        "role": "semantic",
+        "displayName": "Green Soft",
+        "tonalRamp": [
+          "oklch(15% 0.0141 162.47)",
+          "oklch(27% 0.0141 162.47)",
+          "oklch(38% 0.0141 162.47)",
+          "oklch(50% 0.0141 162.47)",
+          "oklch(61% 0.0141 162.47)",
+          "oklch(73% 0.0141 162.47)",
+          "oklch(84% 0.0141 162.47)",
+          "oklch(95% 0.0141 162.47)"
+        ]
+      },
+      "board": {
+        "role": "neutral",
+        "displayName": "Board",
+        "tonalRamp": [
+          "oklch(15% 0.0126 345.49)",
+          "oklch(27% 0.0126 345.49)",
+          "oklch(38% 0.0126 345.49)",
+          "oklch(50% 0.0126 345.49)",
+          "oklch(61% 0.0126 345.49)",
+          "oklch(73% 0.0126 345.49)",
+          "oklch(84% 0.0126 345.49)",
+          "oklch(95% 0.0126 345.49)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "tonalRamp": [
+          "oklch(15% 0.0000 89.88)",
+          "oklch(27% 0.0000 89.88)",
+          "oklch(38% 0.0000 89.88)",
+          "oklch(50% 0.0000 89.88)",
+          "oklch(61% 0.0000 89.88)",
+          "oklch(73% 0.0000 89.88)",
+          "oklch(84% 0.0000 89.88)",
+          "oklch(95% 0.0000 89.88)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Screen Title",
+        "purpose": "Main screen headings."
+      },
+      "score": {
+        "displayName": "Mock Score",
+        "purpose": "Latin tabular result score."
+      }
+    },
+    "shadows": [
+      {
+        "name": "dialog",
+        "value": "0 18px 60px #29212a29",
+        "purpose": "Modal overlay."
+      },
+      {
+        "name": "toast",
+        "value": "0 6px 22px #29212a25",
+        "purpose": "Transient local feedback."
+      },
+      {
+        "name": "notification",
+        "value": "0 8px 24px #4d1a331f",
+        "purpose": "Simulated phone alert."
+      },
+      {
+        "name": "tooltip",
+        "value": "0 6px 18px #29212a18",
+        "purpose": "Chart value tooltip."
+      }
+    ],
+    "motion": [
+      {
+        "name": "control",
+        "value": "150–180ms",
+        "purpose": "Hover and press transitions."
+      },
+      {
+        "name": "chart",
+        "value": "600ms",
+        "purpose": "Bar entry; disabled with reduced motion."
+      },
+      {
+        "name": "focus-ring",
+        "value": "3px solid var(--accent); outline-offset:4px",
+        "purpose": "Global keyboard focus."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile",
+        "value": "480px"
+      },
+      {
+        "name": "compact",
+        "value": "359px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Full-width action; height can grow for wrapped Thai labels.",
+      "html": "<button class=\"ds-button-primary\">ตรวจสอบข้อมูล</button>",
+      "css": ".ds-button-primary{font-family:\"IBM Plex Sans Thai\",\"IBM Plex Sans\",sans-serif;width:100%;min-height:52px;border:0;border-radius:16px;padding:13px 16px;background:var(--accent);color:#fff;font-size:16px;font-weight:500;line-height:24px;cursor:pointer;transition:background .18s,transform .18s;}.ds-button-primary:hover{background:#8e2648;}.ds-button-primary:active{transform:translateY(1px);}.ds-button-primary:focus-visible{outline:3px solid var(--accent);outline-offset:4px;}.ds-button-primary:disabled{background:var(--surface);color:var(--muted);transform:none;cursor:not-allowed;}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Full-width action; height can grow for wrapped Thai labels.",
+      "html": "<button class=\"ds-button-secondary\">ตรวจสอบข้อมูล</button>",
+      "css": ".ds-button-secondary{font-family:\"IBM Plex Sans Thai\",\"IBM Plex Sans\",sans-serif;width:100%;min-height:52px;border:0;border-radius:16px;padding:13px 16px;background:var(--pink-soft);color:var(--accent);font-size:16px;font-weight:500;line-height:24px;cursor:pointer;transition:background .18s,transform .18s;}.ds-button-secondary:hover{background:#f9dce6;}.ds-button-secondary:active{transform:translateY(1px);}.ds-button-secondary:focus-visible{outline:3px solid var(--accent);outline-offset:4px;}.ds-button-secondary:disabled{background:var(--surface);color:var(--muted);transform:none;cursor:not-allowed;}"
+    },
+    {
+      "name": "Text Input Card",
+      "kind": "input",
+      "refersTo": "input-card",
+      "description": "Surface card with visible label and editable textarea.",
+      "html": "<div class=\"ds-input\"><label for=\"ds-message\">ข้อความที่สงสัย</label><textarea id=\"ds-message\" placeholder=\"วางข้อความที่ได้รับ\"></textarea></div>",
+      "css": ".ds-input{font-family:\"IBM Plex Sans Thai\",\"IBM Plex Sans\",sans-serif;border-radius:16px;background:var(--surface);padding:16px;display:flex;flex-direction:column;gap:12px;}.ds-input label{color:var(--muted);font-size:13px;font-weight:500;}.ds-input textarea{font-family:\"IBM Plex Sans Thai\",\"IBM Plex Sans\",sans-serif;width:100%;min-height:144px;border:0;background:transparent;color:var(--ink);resize:vertical;font-size:16px;line-height:24px;border-radius:4px;}.ds-input textarea::placeholder{color:var(--muted);}.ds-input textarea:focus-visible{outline:3px solid var(--accent);outline-offset:4px;}"
+    },
+    {
+      "name": "Bottom Navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Four equal icon and Thai-label columns.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"เมนูหลัก\"><a href=\"#0\" class=\"ds-nav-item ds-active\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" aria-hidden=\"true\"><path d=\"M3 10l9-7 9 7v11h-6v-7H9v7H3z\"/></svg><span>หน้าหลัก</span></a><a href=\"#1\" class=\"ds-nav-item\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" aria-hidden=\"true\"><path d=\"M3 10l9-7 9 7v11h-6v-7H9v7H3z\"/></svg><span>ตรวจสอบ</span></a><a href=\"#2\" class=\"ds-nav-item\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" aria-hidden=\"true\"><path d=\"M3 10l9-7 9 7v11h-6v-7H9v7H3z\"/></svg><span>รายงาน</span></a><a href=\"#3\" class=\"ds-nav-item\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" aria-hidden=\"true\"><path d=\"M3 10l9-7 9 7v11h-6v-7H9v7H3z\"/></svg><span>ประวัติ</span></a></nav>",
+      "css": ".ds-nav{font-family:\"IBM Plex Sans Thai\",\"IBM Plex Sans\",sans-serif;min-height:88px;padding:12px 12px 16px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:#fff;}.ds-nav-item{color:var(--muted);text-decoration:none;min-height:60px;display:flex;flex-direction:column;gap:4px;align-items:center;padding:4px;border-radius:12px;font-size:12px;line-height:18px;}.ds-nav-item.ds-active{color:var(--accent);font-weight:600;}.ds-nav-item:hover{background:var(--surface);}.ds-nav-item:focus-visible{outline:3px solid var(--accent);outline-offset:4px;}"
+    },
+    {
+      "name": "Source Card",
+      "kind": "card",
+      "refersTo": "source-card",
+      "description": "Contextual university source, not a sender-verification claim.",
+      "html": "<a class=\"ds-source\" href=\"https://www.chula.ac.th/\"><small>ข้อมูลมหาวิทยาลัยที่ใกล้เคียง</small><strong>ข้อมูลทุนการศึกษา</strong><span>chula.ac.th · อ่านแหล่งอ้างอิง ↗</span></a>",
+      "css": ".ds-source{font-family:\"IBM Plex Sans Thai\",\"IBM Plex Sans\",sans-serif;border-radius:16px;background:var(--surface);display:flex;flex-direction:column;gap:4px;text-decoration:none;color:var(--ink);padding:16px;transition:background .15s;}.ds-source small{font-size:12px;color:var(--muted);}.ds-source strong{font-size:16px;font-weight:600;}.ds-source span{font-size:13px;line-height:20px;font-weight:500;color:var(--accent);}.ds-source:hover{background:#f0e7ec;}.ds-source:focus-visible{outline:3px solid var(--accent);outline-offset:4px;}"
+    },
+    {
+      "name": "Comparison Label",
+      "kind": "chip",
+      "refersTo": "comparison-label",
+      "description": "Semantic caption paired with a comparison section.",
+      "html": "<span class=\"ds-label\">ข้อความที่ได้รับ</span>",
+      "css": ".ds-label{font-family:\"IBM Plex Sans Thai\",\"IBM Plex Sans\",sans-serif;display:inline-flex;align-items:center;padding:8px;min-width:168px;border-radius:8px;font-size:12px;font-weight:500;background:var(--danger-soft);color:var(--danger);}"
+    },
+    {
+      "name": "Safe Status",
+      "kind": "card",
+      "refersTo": "safe-status",
+      "description": "Home empty-risk finding; explanatory copy must retain mock status.",
+      "html": "<section class=\"ds-safe\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" aria-hidden=\"true\"><path d=\"M3 10l9-7 9 7v11h-6v-7H9v7H3z\"/></svg><strong>ยังไม่พบความเสี่ยง</strong></section>",
+      "css": ".ds-safe{font-family:\"IBM Plex Sans Thai\",\"IBM Plex Sans\",sans-serif;display:flex;gap:12px;align-items:center;padding:20px;background:var(--green-soft);color:var(--green);border-radius:16px;}.ds-safe strong{font-size:20px;line-height:30px;font-weight:600;}"
+    },
+    {
+      "name": "Category Row",
+      "kind": "button",
+      "refersTo": "category-row",
+      "description": "Report category opens the corresponding mock pattern guide.",
+      "html": "<button class=\"ds-category\"><span>หลอกให้โอนเงิน</span><strong>24</strong><span aria-hidden=\"true\">›</span></button>",
+      "css": ".ds-category{font-family:\"IBM Plex Sans Thai\",\"IBM Plex Sans\",sans-serif;display:flex;align-items:center;gap:8px;background:var(--surface);color:var(--ink);border:0;border-radius:12px;padding:12px;min-height:48px;width:100%;font-size:14px;font-weight:500;text-align:left;cursor:pointer;transition:background .15s;}.ds-category>span:first-child{flex:1;}.ds-category strong{font-family:\"IBM Plex Sans\",sans-serif;font-size:16px;font-weight:600;}.ds-category:hover{background:#f0e5ea;}.ds-category:focus-visible{outline:3px solid var(--accent);outline-offset:4px;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The quiet student safety tool",
+    "overview": "Preserve the supplied mobile Figma world: a quiet Thai student safety tool with white surfaces, pink identity, compact cards and clear next actions. The implemented interface pairs concise Thai copy with IBM Plex typography and uses semantic green or danger red to distinguish mock findings.\n\nThis document records the implemented source, not a redesign. The supplied Figma file remains visual authority. Analysis, notifications, statistics and university connections are simulations; their visual presentation must keep that status legible.",
+    "keyCharacteristics": [
+      "A 390px mobile composition with 24px content gutters.",
+      "Soft rectangular surfaces, mostly 16px corners, with little structural shadow.",
+      "Thai-first typography, deep pink actions and explicit simulated-data labels."
+    ],
+    "rules": [],
+    "dos": [
+      "Do preserve the supplied Figma composition and concise Thai voice.",
+      "Do use deep pink for primary actions and pink for brand marks and selected chart bars.",
+      "Do keep mock-analysis labels, uncertainty copy and contextual source links visible.",
+      "Do retain keyboard focus indicators and reduced-motion behavior."
+    ],
+    "donts": [
+      "Don’t widen desktop into a new dashboard layout.",
+      "Don’t present mock scores, source matches or report totals as verified findings.",
+      "Don’t use green alone to communicate a safe state; retain text and icons.",
+      "Don’t add decorative gradients or structural card shadows to the established flat surfaces."
+    ]
+  }
+}

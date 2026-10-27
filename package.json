@@ -1,0 +1,33 @@
+{
+  "name": "scam-detection-web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --webpack --hostname 127.0.0.1 --port 3000",
+    "build": "next build --webpack",
+    "start": "node scripts/serve.mjs",
+    "typecheck": "tsc --noEmit",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "next": "^16.2.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "lucide-react": "^0.577.0",
+    "recharts": "^3.8.0",
+    "motion": "^12.36.0",
+    "@radix-ui/themes": "^3.3.0",
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@fontsource/ibm-plex-sans": "^5.2.8",
+    "@fontsource/ibm-plex-sans-thai": "^5.2.7"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@types/node": "^22.19.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "tailwindcss": "^4.2.0",
+    "@tailwindcss/postcss": "^4.2.0",
+    "@playwright/test": "^1.58.2"
+  }
+}
