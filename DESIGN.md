@@ -17,22 +17,22 @@ colors:
   white: "#FFFFFF"
 typography:
   headline:
-    fontFamily: "IBM Plex Sans Thai, IBM Plex Sans, sans-serif"
+    fontFamily: "IBM Plex Sans, IBM Plex Sans Thai, sans-serif"
     fontSize: "26px"
     fontWeight: 600
     lineHeight: "39px"
   title:
-    fontFamily: "IBM Plex Sans Thai, IBM Plex Sans, sans-serif"
+    fontFamily: "IBM Plex Sans, IBM Plex Sans Thai, sans-serif"
     fontSize: "18px"
     fontWeight: 600
     lineHeight: "27px"
   body:
-    fontFamily: "IBM Plex Sans Thai, IBM Plex Sans, sans-serif"
+    fontFamily: "IBM Plex Sans, IBM Plex Sans Thai, sans-serif"
     fontSize: "16px"
     fontWeight: 400
     lineHeight: "24px"
   helper:
-    fontFamily: "IBM Plex Sans Thai, IBM Plex Sans, sans-serif"
+    fontFamily: "IBM Plex Sans, IBM Plex Sans Thai, sans-serif"
     fontSize: "13px"
     fontWeight: 400
     lineHeight: "20px"
@@ -126,7 +126,7 @@ The selected report bar uses brand pink; unselected bars use `line`. Green commu
 
 ## Typography
 
-Use locally served IBM Plex Sans Thai with IBM Plex Sans fallback. Latin brand text, times, scores and counts use IBM Plex Sans first and tabular numerals. Preserve Thai shaping and breathing room.
+Use locally served IBM Plex Sans first, with IBM Plex Sans Thai for Thai glyphs. Latin brand text, times, scores and counts use IBM Plex Sans first and tabular numerals. Preserve Thai shaping and breathing room.
 
 - Screen titles: 26px / 39px, weight 600.
 - Screen header and status headings: 20px / 30px, weight 600.
@@ -137,7 +137,7 @@ Use locally served IBM Plex Sans Thai with IBM Plex Sans fallback. Latin brand t
 
 ## Layout
 
-Desktop centers a 390px-wide white phone with a minimum height of 844px on `board`. The stage has 32px vertical and 20px horizontal padding; the shell has 24px corners. At widths up to 480px, the stage loses padding and the phone fills available width, has square outer corners and a minimum height of `100svh`.
+Desktop uses a selectable hardware frame that fits the window; the app fills the selected device viewport and scrolls within its screen. Other larger touch surfaces keep the centered 390px white app with a minimum height of 844px and 24px corners. At widths up to 480px, the stage loses padding and the phone fills available width, has square outer corners and a minimum height of `100svh`.
 
 Content uses 24px horizontal gutters, 16px vertical padding and 16px stacked gaps. Below 360px, content and brand gutters become 20px; score and report text compact selectively. The simulated status bar is 44px; home header is at least 60px and interior headers are 72px.
 
@@ -182,3 +182,7 @@ All interactive controls inherit a 3px deep pink `:focus-visible` outline with 4
 - Don’t present mock scores, source matches or report totals as verified findings.
 - Don’t use green alone to communicate a safe state; retain text and icons.
 - Don’t add decorative gradients or structural card shadows to the established flat surfaces.
+
+## Desktop device preview
+
+On desktop (1024px and above with hover and a fine pointer), `da-frame-set` wraps the app in a selectable iPhone Pro, iPhone, Samsung Galaxy or Samsung Galaxy Ultra. The preview fits the available window and scrolls within the phone screen. The selection persists locally. Touch devices keep the regular app layout.

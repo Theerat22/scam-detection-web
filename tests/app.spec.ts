@@ -33,18 +33,18 @@ test('image input accepts a real image, rejects corrupt files, and keeps analysi
   await page.goto('/check/'); await page.getByRole('tab', { name: 'ภาพแชต' }).click();
   const fileInput = page.locator('input[type="file"]');
   await fileInput.setInputFiles({ name: 'broken.png', mimeType: 'image/png', buffer: Buffer.from('not an image') });
-  await expect(page.getByRole('alert')).toContainText('เปิดภาพนี้ไม่ได้');
+  await expect(page.locator('#main-content').getByRole('alert')).toContainText('เปิดภาพนี้ไม่ได้');
   await fileInput.setInputFiles({ name: 'conversation.png', mimeType: 'image/png', buffer: tinyPng });
   await expect(page.getByAltText('ภาพบทสนทนาที่เลือก')).toHaveAttribute('src', /^blob:/);
   await expect(page.getByText('conversation.png')).toBeVisible();
   await page.screenshot({ path: path.join(artifacts, 'mobile-image.png'), fullPage: true });
   await page.getByRole('button', { name: 'วิเคราะห์ภาพ', exact: true }).click();
   await expect(page).toHaveURL(/\/result\//);
-  await expect(page.getByText('ข้อความถอดความตัวอย่าง · ไม่ใช่ OCR จริง')).toBeVisible();
+  await expect(page.locator('#main-content')).not.toContainText('ตัวอย่าง');
   await expect(page.getByAltText('ภาพที่ส่งวิเคราะห์')).toHaveAttribute('src', /^blob:/); expect(posts).toEqual([]);
 });
 test('low-risk outcome and analysis cancellation work', async ({ page }) => {
-  await page.goto('/check/'); await page.getByText('เลือกผลลัพธ์ตัวอย่าง', { exact: false }).click();
+  await page.goto('/check/'); await page.getByText('เลือกผลลัพธ์', { exact: false }).click();
   await page.getByRole('button', { name: 'เสี่ยงต่ำ · 4%' }).click();
   await page.getByRole('button', { name: 'วิเคราะห์ข้อความ' }).click();
   await page.getByRole('button', { name: 'ยกเลิก', exact: true }).click();
@@ -69,7 +69,15 @@ test('weekly chart supports arrows, bar selection, tooltip, and category drill-d
 });
 test('Radix setting switches persist and alert opens mock analysis', async ({ page }) => {
   await page.goto('/settings/'); const sms = page.getByRole('switch', { name: 'SMS', exact: true });
-  await expect(sms).toBeChecked(); await sms.click(); await expect(sms).not.toBeChecked();
+  await expect(sms).toBeChecked();
+  const switchGeometry = await sms.evaluate(element => {
+    const root = element.getBoundingClientRect();
+    const thumb = element.querySelector('.rt-SwitchThumb')!.getBoundingClientRect();
+    return { targetHeight: root.height, contained: thumb.left >= root.left && thumb.right <= root.right && thumb.top >= root.top && thumb.bottom <= root.bottom };
+  });
+  expect(switchGeometry.targetHeight).toBeGreaterThanOrEqual(44);
+  expect(switchGeometry.contained).toBe(true);
+  await sms.click(); await expect(sms).not.toBeChecked();
   await expect(page.getByRole('button', { name: 'ทดลองการแจ้งเตือน' })).toBeDisabled();
   await page.reload(); await expect(sms).not.toBeChecked(); await sms.click();
   await page.screenshot({ path: path.join(artifacts, 'mobile-settings.png'), fullPage: true });
